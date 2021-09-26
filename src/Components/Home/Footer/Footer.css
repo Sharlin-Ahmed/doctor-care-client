@@ -1,0 +1,22 @@
+.footer-area{
+    background-color: #555;
+}
+.footer-area li{
+    padding-bottom: 10px;
+}
+.footer-area li a{
+    text-decoration: none;
+}
+.social-media .icon {
+    background: #3abfba;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid #6ACECE;
+    padding: 10px;
+}
+.social-media .active-icon{
+    background-color: #3abfba;
+    color:white;
+}

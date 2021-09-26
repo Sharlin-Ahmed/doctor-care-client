@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
+// import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -10,22 +11,22 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link me-5 active" aria-current="page" href="#">Home</Link>
+                            <NavHashLink smooth className="nav-link me-5" to="#">Home</NavHashLink>
                         </li>    
                         <li className="nav-item">
-                            <Link className="nav-link me-5" href="#">About</Link>
+                            <NavHashLink smooth className="nav-link me-5" to="#">About</NavHashLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link me-5" href="#">Dental Service</Link>
+                            <NavHashLink smooth to="/#service" className="nav-link me-5">Dental Service</NavHashLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link me-5 text-white" href="#">Reviews</Link>
+                            <NavHashLink smooth className="nav-link me-5 text-white" to="/#review">Reviews</NavHashLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link me-5 text-white" href="#">Blogs</Link>
+                            <NavHashLink smooth className="nav-link me-5 text-white" to="/#blog">Blogs</NavHashLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link me-5 text-white" href="#">Contact</Link>
+                            <NavHashLink smooth className="nav-link me-5 text-white" to="/#contact">Contact</NavHashLink>
                         </li>
                     </ul>
                 </div>

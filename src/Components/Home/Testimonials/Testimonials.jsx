@@ -26,7 +26,7 @@ const testimonialsData = [
 ]
 const Testimonials = () => {
     return (
-        <section className="testimonials my-5 py-5">
+        <section className="testimonials my-5 py-5" id="review">
             <div className="container">
                 <div className="section-header my-3">
                     <h5 className="text-primary text-uppercase">Testimonials</h5>

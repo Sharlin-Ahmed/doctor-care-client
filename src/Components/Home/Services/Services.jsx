@@ -19,7 +19,7 @@ const serviceData = [
 ]
 const Services = () => {
     return (
-        <div className="services-container mt-5">
+        <div className="services-container mt-5" id='service'>
             <div className="text-center">
                 <h5 style={{color: '#1cc7c1'}}>OUR SERVICES</h5>
                 <h2>Services We Provide</h2>

@@ -3,10 +3,10 @@ import './Contact.css';
 
 const Contact = () => {
     return (
-       <section className="contact my-5 text-white py-5">
+       <section className="contact my-5 text-white py-5" id='contact'>
            <div className="container">
                <div className="section-header text-center mb-5">
-                    <h5 className="text-primary text-uppercase">Contact</h5>
+                    <h5 className="text-uppercase">Contact</h5>
                     <h1>Always  connect with us</h1>
                </div>
                <div className="col-md-9 mx-auto">

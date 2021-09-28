@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavHashLink } from 'react-router-hash-link';
-// import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">

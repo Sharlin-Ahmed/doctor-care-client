@@ -7,6 +7,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from "./Components/Home/Home/Home.jsx";
+import Appointment from "./Components/Appointment/Appointment/Appointment.jsx";
 
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
         <Route exact path="/">
           <Home/>
         </Route>
-        {/* <Route>
-          
-        </Route> */}
+        <Route>
+          <Appointment path="appointment"/>
+        </Route>
         {/* <Route>
           
         </Route> */}

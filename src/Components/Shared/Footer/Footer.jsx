@@ -4,7 +4,7 @@ import FooterCol from '../FooterCol/FooterCol'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
 
-const Footer = () => {
+const Footer = ({bgColor}) => {
     const about = [
         {name: "Dental Care" , link: "/emergency"},
         {name: "Teeth Deseases" , link: "/checkup"},

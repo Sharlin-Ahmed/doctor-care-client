@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavHashLink } from 'react-router-hash-link';
-const Navbar = () => {
+const Navbar = ({textColor}) => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
@@ -19,13 +19,13 @@ const Navbar = () => {
                             <NavHashLink smooth to="/#service" className="nav-link me-5">Dental Service</NavHashLink>
                         </li>
                         <li className="nav-item">
-                            <NavHashLink smooth className="nav-link me-5 text-white" to="/#review">Reviews</NavHashLink>
+                            <NavHashLink smooth className={textColor ? 'nav-link me-5' : 'nav-link me-5 text-white'} to="/#review">Reviews</NavHashLink>
                         </li>
                         <li className="nav-item">
-                            <NavHashLink smooth className="nav-link me-5 text-white" to="/#blog">Blogs</NavHashLink>
+                            <NavHashLink smooth className={textColor ? 'nav-link me-5' : 'nav-link me-5 text-white'} to="/#blog">Blogs</NavHashLink>
                         </li>
                         <li className="nav-item">
-                            <NavHashLink smooth className="nav-link me-5 text-white" to="/#contact">Contact</NavHashLink>
+                            <NavHashLink smooth className={textColor ? 'nav-link me-5' : 'nav-link me-5 text-white'} to="/#contact">Contact</NavHashLink>
                         </li>
                     </ul>
                 </div>

@@ -13,11 +13,11 @@ import BookAppointment from "../BookAppointment/BookAppointment";
      return (
          <div>
              <div className="appointment-container">
-                <Navbar/>
+                <Navbar textColor={true}/>
                 <AppointmentHeader handleDateChange={handleDateChange}/>
              </div>
              <BookAppointment date={selectedDate}/>
-             <Footer/>
+             <Footer bgColor={true}/>
          </div>
      )
  }

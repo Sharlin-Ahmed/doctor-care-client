@@ -11,6 +11,9 @@ import Appointment from "./Components/Appointment/Appointment/Appointment.jsx";
 import Login from "./Components/Login/Login/Login.jsx";
 import PrivateRoute from "./Components/Login/PrivateRoute/PrivateRoute.jsx";
 import AllPatients from "./Components/AllPatients/AllPatients.jsx";
+import Dashboard from "./Components/Dashboard/Dashboard/Dashboard.jsx";
+import AddDoctor from "./Components/AddDoctor/AddDoctor.jsx";
+import NoMatch from "./Components/NoMatch/NoMatch.jsx";
 
 export const UserContext = createContext()
 
@@ -35,9 +38,21 @@ function App() {
             <Login />
           </Route>
 
+          <Route path="*">
+            <NoMatch></NoMatch>     
+          </Route>
+
           <PrivateRoute path="/allPatients">
             <AllPatients />
           </PrivateRoute>
+
+          <PrivateRoute path="/dashboard">
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+
+          <Route path="/addDoctor">
+            <AddDoctor></AddDoctor>     
+          </Route>
 
         </Switch>
       </Router>

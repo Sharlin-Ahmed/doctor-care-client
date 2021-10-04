@@ -38,20 +38,20 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="*">
-            <NoMatch></NoMatch>     
+          <Route path="/allPatients">
+            <AllPatients />
           </Route>
 
-          <PrivateRoute path="/allPatients">
-            <AllPatients />
-          </PrivateRoute>
-
-          <PrivateRoute path="/dashboard">
+          <Route path="/dashboard">
             <Dashboard></Dashboard>
-          </PrivateRoute>
+          </Route>
 
           <Route path="/addDoctor">
             <AddDoctor></AddDoctor>     
+          </Route>
+
+          <Route path="*">
+            <NoMatch></NoMatch>     
           </Route>
 
         </Switch>

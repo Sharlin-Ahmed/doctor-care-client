@@ -20,8 +20,8 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date}) => {
     const onSubmit = data => {
 
         data.service = appointmentOn;
-        data.date = date;
-        data.created = new Date()
+        data.date = date.toDateString();
+        data.created = new Date().toDateString()
 
         fetch('http://localhost:5000/addAppointment', {
             method: 'POST',

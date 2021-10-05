@@ -4,7 +4,7 @@ import Sidebar from '../Dashboard/Sidebar/Sidebar';
 
 const AllPatients = () => {
     const [appointments, setAppointments] = useState([]);
-    console.log(appointments)
+    
     useEffect(() => {
         fetch('http://localhost:5000/appointments')
             .then(res => res.json())

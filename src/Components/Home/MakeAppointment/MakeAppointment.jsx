@@ -12,9 +12,8 @@ const MakeAppointment = () => {
                     <div className="col-md-7 text-white py-5">
                         <h5 className="text-uppercase">Appointment</h5>
                         <h1 className="my-4">Make an appointment <br /> Today</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laborum, corporis quas repellendus quaerat quam corrupti ipsum asperiores voluptate sint!</p>
-
-                        <button className='btn btn-primary mt-3'>Learn More</button>
+                        <p>Doctor Care. If your teeth are missing, decayed, weakened or fractured, you might need a dental restoration. See your dentist if you’re having any problems with your teeth. For Booking.</p>
+                        <h1 className="my-3">Call : +099-666-999</h1>
                     </div>
                 </div>
             </div>

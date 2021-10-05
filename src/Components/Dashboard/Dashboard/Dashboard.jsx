@@ -21,7 +21,8 @@ const Dashboard = () => {
             body: JSON.stringify({ date: selectedDate})
         })
             .then(res => res.json())
-            .then(data => setAppointments(data))
+            // .then(data => setAppointments(data))
+            .then(data => console.log(data))
     }, [selectedDate])
 
 

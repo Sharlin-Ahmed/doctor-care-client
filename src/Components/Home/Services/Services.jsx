@@ -5,16 +5,19 @@ import Cavity from '../../../images/cavity.png'
 import Whitening from '../../../images/whitening.png'
 const serviceData = [
     {
-        name: 'Fluride Treatment',
-        img : Fluride
+        name: 'Root Canal Treatment',
+        img : Fluride,
+        treatmentDetails : 'Root canal treatment is a dental procedure that replaces a tooth’s damaged or infected pulp with a filling. '
     },
     {
         name: 'Cavity Filling',
-        img : Cavity
+        img : Cavity,
+        treatmentDetails : 'Cavity fillings treatment, also called dental fillings or tooth fillings, are most commonly used to fill minor cavities.'
     },
     {
-        name: 'Teath Whitiening ',
-        img : Whitening
+        name: 'Teath Whitiening',
+        img : Whitening,
+        treatmentDetails : 'Strawberries are known to have malic acid and vitamin c in them which are both useful for teeth whitening for looking good.'
     },
 ]
 const Services = () => {

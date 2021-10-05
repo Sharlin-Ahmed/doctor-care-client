@@ -7,17 +7,20 @@ const Doctors = () => {
     const doctorData = [
         {
             pic : doctor1,
-            name : 'Dr. john',
+            name : 'Dr. Jasmin Chowduray',
+            spcialization : "Pediatric Dentist",
             number : '+880 1777 545-545'
         },
         {
             pic : doctor2,
-            name : 'Dr. Smith',
+            name : 'Dr. Faruk Abedin',
+            spcialization : "Oral and Maxillofacial Surgeon",
             number : '+880 1888 545-545'
         },
         {
             pic : doctor3,
-            name : 'Dr. Kim',
+            name : 'Dr. Saleh Ahmed',
+            spcialization : "Orthodontist",
             number : '+880 1999 545-545'
         },
     ] 

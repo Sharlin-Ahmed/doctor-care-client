@@ -10,7 +10,7 @@ const Feature = () => {
                     </div>
                     <div className="col-md-7 align-self-center">
                         <h1>Exceptional Dental Care, on Your Term.</h1>
-                        <p className="text-secondary my-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam id facere illo facilis iure libero praesentium voluptas porro. Maxime iste mollitia dicta culpa tempora numquam, unde provident est recusandae magni sed excepturi eligendi dolore, aspernatur voluptates molestiae quae possimus! Aliquid odit ducimus nisi! Excepturi alias nemo at aliquam, nisi aspernatur!</p>
+                        <p className="text-secondary my-5 lead">Your dentist can suggest various treatments to restore damaged teeth. These treatments help restore the appearance, shape and function of your teeth. They include: bonding – chipped, gapped, discoloured or oddly shaped teeth can be treated with bonding. A tooth-coloured resin filling is applied to achieve a more regular look to the affected tooth.</p>
 
                         <button className='btn btn-primary'>Learn More</button>
                     </div>

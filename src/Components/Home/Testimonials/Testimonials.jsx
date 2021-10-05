@@ -6,21 +6,21 @@ import person2 from '../../../images/person2.png';
 import person3 from '../../../images/person3.png';
 const testimonialsData = [
     {    
-        qoute : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  inventore reprehenderit suscipit eum dicta deleniti veniam nam odio perferendis officiis.',
+        qoute : '"Life after treatment is just great because I no longer have to worry about an ill-fitting denture and I can eat without thinking."',
         name : 'Wilson Hanrry',
-        from : 'New York',
+        from : 'Kandirpar, Cumilla',
         img : person1
     },
     {
-        qoute : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  inventore reprehenderit suscipit eum dicta deleniti veniam nam odio perferendis officiis.',
-        name : 'Ema Gomer',
-        from : 'Califonia',
+        qoute : '"When I first saw my smile I felt really confident that everything had gone really well because my tooth looked just as it had before."',
+        name : 'Mrs Scaife',
+        from : 'Cantonment, Cumilla',
         img : person2
     },
     {
-        qoute : 'Lorem ipsum dolor sit amet consectetur adipisicing elit.  inventore reprehenderit suscipit eum dicta deleniti veniam nam odio perferendis officiis.',
+        qoute : '"What I love to do is play a small role in patients’ lives – not just their mouths – and to be able to give them their confidence back"',
         name : 'Aliza Farari',
-        from : 'New York',
+        from : 'Rajgong, Cumilla',
         img : person3
     },
 ]

@@ -1,27 +1,29 @@
 import React from 'react'
 import BlogPost from '../BlogPost/BlogPost'
-import Wilson from '../../../images/person1.png'
+import client1 from '../../../images/client1.png'
+import client2 from '../../../images/client2.png'
+import client3 from '../../../images/client3.png'
 import './Blogs.css'
 const blogData = [
     {
         title: 'Check at least a doctor in a year for your teeth',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eum aliquam sit quo officia voluptas impedit repellat illum consequuntur! Sequi!',
-        author: 'Dr. Kim',
-        aurhorImg: Wilson,
+        description: 'As dentists, we took a professional oath to care for our patients. We entered the profession with the ideological belief that we can and will make a difference in our patients lives. We are hopeful, eager and will go above […]',
+        author: 'Dr. J k Kibria',
+        aurhorImg: client1,
         date: '23 April 2021',
     },
     {
         title: 'Two time brush in a day can keep you healthy',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eum aliquam sit quo officia voluptas impedit repellat illum consequuntur! Sequi!',
-        author: 'Dr. Shinthia',
-        aurhorImg: Wilson,
+        description: 'The natural color of our teeth is a shade of white, we should try our best to preserve it. Certain habits can stain our enamel and take away our pearly white teeth. No amount of brushing can help you get that white […]',
+        author: 'Dr. Sharmim Sultana',
+        aurhorImg: client2,
         date: '24 May 2021',
     },
     {
         title: 'The tooth cancer is taking a challenge',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eum aliquam sit quo officia voluptas impedit repellat illum consequuntur! Sequi!',
-        author: 'Dr. Smith',
-        aurhorImg: Wilson,
+        description: 'Standard whitening trays can be bought from a local medical store. Trays are lined with special type of bleaching gel which helps brighten the color of your teeth. Often these trays are supposed to be worn for an hour every day, […]',
+        author: 'Dr. Miran Uddin',
+        aurhorImg: client3,
         date: '05 Aug 2021',
     },
 ]

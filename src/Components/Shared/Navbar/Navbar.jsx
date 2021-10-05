@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
+import { UserContext } from '../../../App';
 const Navbar = ({textColor}) => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <nav className="navbar navbar-expand-lg navbar-light" id='home'>
             <div className="container-fluid">
@@ -26,6 +29,12 @@ const Navbar = ({textColor}) => {
                         </li>
                         <li className="nav-item">
                             <NavHashLink smooth className={textColor ? 'nav-link me-5' : 'nav-link me-5 text-white'} to="/#contact">Contact</NavHashLink>
+                        </li>
+                        <li className="me-2 nav-item">
+                            {
+                                loggedInUser.email ? <img src={loggedInUser.photoURL} className="rounded-circle" style={{width: '40px'}} alt="" /> :
+                                <Link style={{backgroundColor: '#1cc7c1'}} to='/login' className='btn'>Login</Link>
+                            }
                         </li>
                     </ul>
                 </div>

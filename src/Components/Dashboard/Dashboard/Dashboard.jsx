@@ -18,11 +18,13 @@ const Dashboard = () => {
         fetch('http://localhost:5000/appointmentsByDate', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ date: selectedDate})
+            body: JSON.stringify({ bookedDate: selectedDate})
         })
             .then(res => res.json())
-            // .then(data => setAppointments(data))
-            .then(data => console.log(data))
+            .then(data => {
+                setAppointments(data)
+                console.log(data)
+            })
     }, [selectedDate])
 
 

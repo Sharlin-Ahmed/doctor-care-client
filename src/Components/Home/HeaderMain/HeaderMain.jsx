@@ -9,7 +9,7 @@ const HeaderMain = () => {
                 <div className='col-md-4 offset-md-1'>
                     <h1 style={{ color: '#3A4256'}}>Your New Smile <br /> Starts Here...</h1>
                     <p className='text-secondary my-3 lead'>Our Service and the work efficiency of our doctors are the reasons for our success.</p>
-                    <button className='btn btn-primary' onClick={() => history.push("/appointment")}>Get Appointments</button>
+                    <button style={{backgroundColor : '#1cc7c1', fontWeight : '600'}} className='btn' onClick={() => history.push("/appointment")}>Get Appointments</button>
                 </div>
                 <div className='col-md-6'>
                     <img src={chair} alt="" className='img-fluid' />

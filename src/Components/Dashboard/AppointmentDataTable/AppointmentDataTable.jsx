@@ -20,12 +20,12 @@ const AppointmentDataTable = ({appointments}) => {
                         
                     <tr>
                         <td>{index + 1}</td>
-                        <td>{appointment.data.name}</td>
-                        <td>{appointment.data.gender}</td>
-                        <td>{appointment.data.age}</td>
-                        <td>{appointment.data.weight}KG</td>
-                        <td>{appointment.data.phone}</td>
-                        <td>{appointment.data.email}</td>
+                        <td>{appointment.name}</td>
+                        <td>{appointment.gender}</td>
+                        <td>{appointment.age}</td>
+                        <td>{appointment.weight}KG</td>
+                        <td>{appointment.phone}</td>
+                        <td>{appointment.email}</td>
                     </tr>
                     )
                 }

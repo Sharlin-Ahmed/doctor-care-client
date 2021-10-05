@@ -4,7 +4,7 @@ import AppointmentShortList from '../AppointmentShortList/AppointmentShortList';
 const AppointmentsByDate = ({appointments}) => {
     return (
         <div>
-            <h3 className="text-center">AppointmentsByDate {appointments.length}</h3>
+            <h3 className="text-center pb-3">Appointments By Date {appointments.length} Patients Today We Have.</h3>
             {
                 appointments.length ?
                  <AppointmentShortList appointments={appointments} ></AppointmentShortList>

@@ -9,6 +9,11 @@ const Sidebar = () => {
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
              <ul className="list-unstyled">
                 <li>
+                    <Link to="/" className="text-white" >
+                      <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+                    </Link>
+                </li>
+                <li>
                     <Link to="/dashboard" className="text-white">
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span> 
                     </Link>
@@ -28,11 +33,6 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faFileAlt} /> <span>Prescriptions</span>
                     </Link>
                 </li> */}
-                <li>
-                    <Link to="/" className="text-white" >
-                      <FontAwesomeIcon icon={faHome} /> <span>Home</span>
-                    </Link>
-                </li>
              </ul>
              <div>
                 <Link to="#" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>

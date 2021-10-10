@@ -1,5 +1,5 @@
 import React from 'react'
-import featureImg from '../../../images/featureImg.png'
+import featureImg from '../../../images/featurePic3.png'
 const Feature = () => {
     return (
         <section className='feature-service pb-0 pb-md-5 my-5'>

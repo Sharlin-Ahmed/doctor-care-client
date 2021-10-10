@@ -10,7 +10,7 @@ const infosData = [
     },
     {
         title : "Visits ours location",
-        description : "Kandirpar Nazrul road 32/A",
+        description : "Kandirpar Rajgong road 32/A",
         icon : faMapMarker,
         backgroundColor : `dark`
     },

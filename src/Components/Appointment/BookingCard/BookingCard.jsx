@@ -29,10 +29,21 @@ const BookingCard = ({ booking, date }) => {
     }
 
     function checkModalOpenOrNot(serviceNumber) {
-        if (serviceNumber < 5 ) {
+        var today, selectedDate;
+        today = new Date();
+        today.setHours(0, 0, 0, 0);
+        // console.log(today);
+        selectedDate = new Date(date);
+        // console.log(selectedDate);
+        if (today.getTime() === selectedDate.getTime() && serviceNumber < 5) {
             setIsOpen(true);
-        } else {
-            alert("Ooh! Sorry! No Spaces Available For Appointment")
+        } else if (today.getTime() < selectedDate.getTime() && serviceNumber < 5) {
+            setIsOpen(true);
+        } else if (today.getTime() > selectedDate.getTime() && serviceNumber < 5) {
+            alert("Select a Back Date. Please Check Your Selected Date.")
+        }
+        else{
+            alert("Ooh! Sorry! Today No Spaces Available For Appointment")
         }
     }
     function openModal() {

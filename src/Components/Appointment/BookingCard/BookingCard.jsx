@@ -1,16 +1,53 @@
 import React, { useState } from 'react';
 import AppointmentForm from '../AppointmentForm/AppointmentForm';
 
-const BookingCard = ({booking, date}) => {
+const BookingCard = ({ booking, date }) => {
     const [modalIsOpen, setIsOpen] = useState(false);
 
-    function openModal() {
-        setIsOpen(true);
+    const getSelectedDataData = () => {
+        const selectedDate = date.toDateString()
+        fetch('https://afternoon-waters-72934.herokuapp.com/appointmentsByDate', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ bookedDate: selectedDate })
+        })
+            .then(res => res.json())
+            .then(data => {
+                let serviceNames = data.map(singleData => singleData.service)
+                console.log(serviceNames)
+                let serviceNumber = 0
+                serviceNames.filter(service => {
+                    if (booking.subject === service) {
+                        serviceNumber += 1
+                    }
+                    return serviceNumber;
+                })
+
+                console.log(`Find ${booking.subject}`, serviceNumber, 'Times')
+                checkModalOpenOrNot(serviceNumber)
+            })
     }
+
+    function checkModalOpenOrNot(serviceNumber) {
+        if (serviceNumber < 5 ) {
+            setIsOpen(true);
+        } else {
+            alert("Ooh! Sorry! No Spaces Available For Appointment")
+        }
+    }
+    function openModal() {
+        getSelectedDataData()
+        console.log(booking.subject)
+    }
+
+
+    // function openModal() {
+    //     setIsOpen(true);
+    // }
 
     function closeModal() {
         setIsOpen(false);
-    } 
+    }
     return (
         <div className="col-md-4 mb-5">
             <div className="card p-3 shadow rounded">
@@ -19,7 +56,7 @@ const BookingCard = ({booking, date}) => {
                     <h6>{booking.visitingHour}</h6>
                     <h4>{booking.doctorName}</h4>
                     {/* <p>{booking.totalSpace} SPACES AVAILABLE</p> */}
-                    <button style={{backgroundColor: '#1cc7c1'}} onClick={openModal} className="btn btn-brand text-uppercase mt-2">Book Appointment</button>
+                    <button style={{ backgroundColor: '#1cc7c1' }} onClick={openModal} className="btn btn-brand text-uppercase mt-2">Book Appointment</button>
                     <AppointmentForm modalIsOpen={modalIsOpen} appointmentOn={booking.subject} closeModal={closeModal} date={date}></AppointmentForm>
                 </div>
             </div>

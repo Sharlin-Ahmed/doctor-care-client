@@ -8,6 +8,7 @@ import firebaseConfig from './firebase.config.js'
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { UserContext } from "../../../App";
 import { useHistory, useLocation } from 'react-router-dom';
+import SignUp from "./signUp";
 
 
 
@@ -64,7 +65,10 @@ const Login = () => {
       <div className="row d-flex align-items-center" style={{ height: "80vh" }}>
         <div className="col-md-5 shadow p-5 rounded">
           <div className="form-group">
-            <label htmlFor="" className="text-primary">
+            {/* <SignUp/> */}
+          </div>
+          <div className="form-group">
+            <label htmlFor="" className="text-primary mt-5">
               Please Sign In by Google*
             </label>
           </div>

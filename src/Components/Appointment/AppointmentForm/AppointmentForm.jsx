@@ -17,6 +17,7 @@ Modal.setAppElement('#root');
 const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date}) => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const reload=()=>window.location.reload();
     const onSubmit = data => {
 
         data.service = appointmentOn;
@@ -38,6 +39,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date}) => {
         })
         alert("Your Appoinment Successfully Submited")
         closeModal()
+        reload()
     };
 
     return (
